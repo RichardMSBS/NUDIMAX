@@ -15,7 +15,7 @@ This is designed to:
 - Run both alignment packages
 - Rename Newick branches (e.g., adding species names)
 
-> **Note:** While this feature is included, a remote BLAST query is much slower than the BLAST web interface or using a local database.
+> **\*Note:** While this feature is included, a remote BLAST query is much slower than the BLAST web interface or using a local database.
 
 ## Methods
 This is accomplished via a number of custom functions, which primarily use Biopython and Pandas. Importantly, these custom functions only wrangle and convert data; NUDIMAX does not perform any analysis or computation directly. Instead, it includes user-friendly wrappers that allow users to call peer-reviewed packages (including MAFFT, IQ-TREE, MrBayes, and optionally NCBI BLAST) without requiring command-line interaction, root access, or macOS/Windows/Linux compatibility issues.
