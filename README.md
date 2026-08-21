@@ -26,6 +26,8 @@ This notebook is provided "as-is" with no warranty. While this tool is designed 
 ## Citation
 If you use NUDIMAX in your research, please cite the project as follows:
 
+Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.15a). Retrieved from https://github.com/RichardMSBS/NUDIMAX
+
 ```bibtex
 @software{NUDIMAX},
   author = {Baker, Richard and Bonomo, Lynn and Guzmán, Paola and Gosliner, Terry},
