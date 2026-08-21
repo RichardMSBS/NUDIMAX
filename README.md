@@ -32,7 +32,7 @@ If you use NUDIMAX in your research, please cite the project as follows:
   title = {NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows},
   version = {0.15a},
   year = {2026},
-  url = {[https://github.com/RichardMSBS/NudiMax](https://github.com/RichardMSBS/NudiMax)}
+  url = {https://github.com/RichardMSBS/NUDIMAX}
 }
 ```
 
