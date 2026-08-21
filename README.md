@@ -28,7 +28,7 @@ If you use NUDIMAX in your research, please cite the project as follows:
 
 ```bibtex
 @software{NUDIMAX},
-  author = {Baker, Richard and Gosliner, Terry and Bonomo, Lynn and Guzmán, Paola},
+  author = {Baker, Richard and Bonomo, Lynn and Guzmán, Paola and Gosliner, Terry},
   title = {NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows},
   version = {0.15a},
   year = {2026},
