@@ -1,4 +1,4 @@
-# NUDIMAX
+# NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows
 By Richard Baker, MS, in collaboration with the [Gosliner Slug Lab](https://sluglab.wordpress.com/) at the California Academy of Sciences (Terry Gosliner, PhD; Lynn Bonomo, MS; and Paola Guzmán, BS)
 
 ## Overview
