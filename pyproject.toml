@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "nudimax"
 version = "0.16.2"
 dependencies = ['biopython>=1.81', 'pandas>=2.2.3']
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 authors = [
   {name = "Richard Baker-Strader", email = "richardmsbs@gmail.com"},
   {name = "Lynn J. Bonomo", email = "lbonomo@calacademy.com"},
@@ -17,3 +17,8 @@ readme = "README.md"
 
 [project.scripts]
 nudimax = "nudimax:setup"
+
+[project.urls]
+Homepage = "https://github.com/RichardMSBS/NUDIMAX"
+"Bug Tracker" = "https://github.com/RichardMSBS/NUDIMAX/issues"
+Changelog = "https://github.com/RichardMSBS/NUDIMAX/blob/main/CHANGELOG.md"
