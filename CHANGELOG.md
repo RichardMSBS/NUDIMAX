@@ -58,13 +58,13 @@
 #### rename_fastas()
 * removed; functionality incorporated into join_single_gene_FASTA()
 
-#### 0.13-alpha
+### 0.13-alpha
 * make a list of Genbank descriptions to verify sequences
 * check for packages before installing them (to save time)
 * include BLAST to identify sequences needing reassignment
 * align using MAFFT for automatic RC detection
 
-#### 0.12-alpha
+### 0.12-alpha
 * combine genbank_reader() and genbank_to_fasta() into one function
 * expand renaming support
 * rename several functions and variables
