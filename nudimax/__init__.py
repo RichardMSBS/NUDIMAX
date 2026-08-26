@@ -168,40 +168,37 @@ note: In Google Colab, collapse this section for one-click setup
 
 ###### install dependencies
 """
+import Bio          # main biopython package
+from   Bio          import AlignIO # for handling alignments
+from   Bio          import Entrez  # for querying GenBank
+from   Bio.Nexus    import Nexus   # nexus-specific commands
+from   Bio          import Phylo   # for handling trees
+from   Bio          import SeqIO   # for handling sequences
+import pandas as pd # for wrangling data in tabular format
+import datetime
+
+try:
+  from   google.colab import drive   # for backups
+except ImportError:
+  pass
+
+import importlib.util
+import io           # for handling text streams
+import os           # for interacting with directories, filenames, etc
+import pathlib      # interact with file paths and extensions
+from   pathlib    import Path    # for filepath-specific commands
+import re           # REGEX - TLDR: a more powerful find-and-replace utility
+import shutil       # for compressing files (.zip)
+from   shutil       import copytree, ignore_patterns # for backups
+import subprocess   # for running BASH commands in Python
+from   subprocess import Popen   # for running BASH from Python
+from   subprocess import PIPE    # for running BASH from Python
+from   subprocess import CalledProcessError # for running BASH from Python
+import zipfile      # for unzipping .zip archives
+
 
 def setup():
   print(f'NUDIMAX: installing dependencies...')
-  import importlib.util
-  import subprocess
-
-  # check for Biopython; install if req'd
-  if importlib.util.find_spec('Bio') is None:
-    print(f' ? biopython not found. attempting installation...')
-    subprocess.run(['pip', 'install', 'biopython'])
-  else:
-    print(f'  ✓ biopython installed.')
-
-  import Bio          # main biopython package
-  from   Bio          import AlignIO # for handling alignments
-  from   Bio          import Entrez  # for querying GenBank
-  from   Bio.Nexus    import Nexus   # nexus-specific commands
-  from   Bio          import Phylo   # for handling trees
-  from   Bio          import SeqIO   # for handling sequences
-  import datetime
-  from   google.colab import drive   # for backups
-  import io           # for handling text streams
-  import os           # for interacting with directories, filenames, etc
-  import pandas as pd # for wrangling data in tabular format
-  import pathlib      # interact with file paths and extensions
-  from   pathlib    import Path    # for filepath-specific commands
-  import re           # REGEX - TLDR: a more powerful find-and-replace utility
-  import shutil       # for compressing files (.zip)
-  from   shutil       import copytree, ignore_patterns # for backups
-  import subprocess   # for running BASH commands in Python
-  from   subprocess import Popen   # for running BASH from Python
-  from   subprocess import PIPE    # for running BASH from Python
-  from   subprocess import CalledProcessError # for running BASH from Python
-  import zipfile      # for unzipping .zip archives
 
   # installs the following analysis packages:
   #   BLAST   2.17
