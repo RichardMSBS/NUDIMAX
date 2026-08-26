@@ -45,7 +45,7 @@ Alternatively, save the included .ipynb file to Google Drive. Drive will automat
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
 
-Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16a). Retrieved from https://github.com/RichardMSBS/NUDIMAX
+Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16.2-alpha). Retrieved from https://github.com/RichardMSBS/NUDIMAX
 
 ```bibtex
 @software{NUDIMAX},
