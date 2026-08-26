@@ -58,7 +58,7 @@ Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessibl
 
 ```
 bibtex
-@software{NUDIMAX},
+@software{NUDIMAX,
   author = {Baker, Richard and Bonomo, Lynn and Guzmán, Paola and Gosliner, Terry},
   title = {NUDIMAX: An accessible data-wrangling pipeline and wrapper for partitioned phylogenetic workflows},
   version = {0.16.2-alpha},
