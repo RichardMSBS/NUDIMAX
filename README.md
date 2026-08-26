@@ -27,6 +27,13 @@ This notebook is provided "as-is" with no warranty. While this tool is designed 
 
 NUDIMAX is still in active development, and should be considered to be in an alpha state. While it has been tested with a number of inputs, it may contain bugs as yet unseen (and therefore, unsquashed).
 
+## Installation
+```
+!pip install git+https://github.com/RichardMSBS/nudimax.git
+import nudimax
+nudimax.setup()
+```
+
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
 
