@@ -3,12 +3,12 @@ Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán² ³, Terry Gosliner²
 
 ¹Center for Comparative Genomics, California Academy of Sciences
 
-²Department of Invertebrate Zoology & Geology ([Gosliner Slug Lab](https://sluglab.wordpress.com/))
+²Department of Invertebrate Zoology & Geology 
 
 ³University of Puerto Rico at Cayey
 
 ## Overview
-This Python notebook is designed to facilitate data-wrangling for partitioned maximum-likelihood phylogenetic analysis projects that follow a typical workflow of the Gosliner Slug Lab at the California Academy of Sciences (hence, NUDIMAX = NUDIbranch MAXimum-likelihood*). This is all packaged as an interactive Python notebook for use in [Google Colab](https://colab.research.google.com) (and includes a basic user interface using their Forms feature, but relies on an Internet connection) or a [Jupyter notebook](https://jupyter.org/) (which requires interacting directly with the code, but can be installed and run locally). It is also portable to an HPC cluster, if one is available.
+This Python notebook is designed to facilitate data-wrangling for partitioned maximum-likelihood phylogenetic analysis projects that follow a typical workflow of the [Gosliner Slug Lab](https://sluglab.wordpress.com/) at the California Academy of Sciences (hence, NUDIMAX = NUDIbranch MAXimum-likelihood*). This is all packaged as an interactive Python notebook for use in [Google Colab](https://colab.research.google.com) (and includes a basic user interface using their Forms feature, but relies on an Internet connection) or a [Jupyter notebook](https://jupyter.org/) (which requires interacting directly with the code, but can be installed and run locally). It is also portable to an HPC cluster, if one is available.
 
 > **\*Note:** Since v0.16, NUDIMAX supports both maximum-likelihood and Bayesian inference.
 
@@ -40,15 +40,15 @@ To install NUDIMAX, simply copy the following into a Python environment. The set
 import nudimax
 nudimax.setup()
 ```
-Alternatively, save the included .ipynb file to Google Drive and open it in the Colab environment.
+Alternatively, save the included .ipynb file to Google Drive. Drive will automatically open in the Colab environment.
 
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
 
-Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16a). Retrieved from https://github.com/RichardMSBS/NUDIMAX
+Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16.2-alpha). Retrieved from https://github.com/RichardMSBS/NUDIMAX
 
 ```bibtex
-@software{NUDIMAX},
+@software{NUDIMAX,
   author = {Baker, Richard and Bonomo, Lynn and Guzmán, Paola and Gosliner, Terry},
   title = {NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows},
   version = {0.16.2-alpha},
