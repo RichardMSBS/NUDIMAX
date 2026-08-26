@@ -1,5 +1,8 @@
 # NUDIMAX: An accessible data-wrangling pipeline and wrapper for partitioned phylogenetic workflows
-By Richard Baker, MS, in collaboration with the [Gosliner Slug Lab](https://sluglab.wordpress.com/) at the California Academy of Sciences: Paola Guzmán, Lynn J. Bonomo, and Terry Gosliner
+Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán² ³, Terry Gosliner²
+¹Center for Comparative Genomics, California Academy of Sciences
+²Department of Invertebrate Zoology & Geology ([Gosliner Slug Lab](https://sluglab.wordpress.com/))
+³University of Puerto Rico at Cayey
 
 ## Overview
 This Python notebook is designed to facilitate data-wrangling for partitioned maximum-likelihood phylogenetic analysis projects that follow a typical workflow of the Gosliner Slug Lab at the California Academy of Sciences (hence, NUDIMAX = NUDIbranch MAXimum-likelihood*). This is all packaged as an interactive Python notebook for use in [Google Colab](https://colab.research.google.com) (and includes a basic user interface using their Forms feature, but relies on an Internet connection) or a [Jupyter notebook](https://jupyter.org/) (which requires interacting directly with the code, but can be installed and run locally). It is also portable to an HPC cluster, if one is available.
@@ -45,7 +48,7 @@ Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessibl
 @software{NUDIMAX},
   author = {Baker, Richard and Bonomo, Lynn and Guzmán, Paola and Gosliner, Terry},
   title = {NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows},
-  version = {0.16a},
+  version = {0.16.2-alpha},
   year = {2026},
   url = {https://github.com/RichardMSBS/NUDIMAX}
 }
