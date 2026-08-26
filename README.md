@@ -1,7 +1,10 @@
 # NUDIMAX: An accessible data-wrangling pipeline and wrapper for partitioned phylogenetic workflows
 Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán² ³, Terry Gosliner²
+
 ¹Center for Comparative Genomics, California Academy of Sciences
+
 ²Department of Invertebrate Zoology & Geology ([Gosliner Slug Lab](https://sluglab.wordpress.com/))
+
 ³University of Puerto Rico at Cayey
 
 ## Overview
