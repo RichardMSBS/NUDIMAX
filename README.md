@@ -40,7 +40,7 @@ To install NUDIMAX, simply copy the following into a Python environment. The set
 import nudimax
 nudimax.setup()
 ```
-Alternatively, save the included .ipynb file to Google Drive and open it in the Colab environment.
+Alternatively, save the included .ipynb file to Google Drive. Drive will automatically open in the Colab environment.
 
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
