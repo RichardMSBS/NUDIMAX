@@ -43,7 +43,7 @@ nudimax.setup()
 Alternatively, save the included .ipynb file to Google Drive. Drive will automatically open in the Colab environment.
 
 ## Usage
-For detailed instructions and example inputs, either open the included (Python markdown)[https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb] in Google Drive/Jupyter or refer to (USAGE.md)[https://github.com/RichardMSBS/NUDIMAX/blob/main/USAGE.md] 
+For detailed instructions and example inputs, either open the included [Python markdown](https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb) in Google Drive/Jupyter or refer to [USAGE.md](https://github.com/RichardMSBS/NUDIMAX/blob/main/USAGE.md). 
 
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
