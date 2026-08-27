@@ -9,7 +9,6 @@ export_to_drive() takes up to three inputs:
 * copy_all      (Optional) will copy the entire NUDIMAX scratch folder.
 
 ```
-copy_all = False # @param {"type":"boolean"}
 nudimax.export_to_drive(destination = destination = "NUDIMAX_backup",
                         source      = 'Tenellia_backup',
                         copy_all    = False)
@@ -56,7 +55,7 @@ nudimax.BLAST_wrapper(input_type = 'folder',
 ```
 
 ### MAFFT_wrapper()
-MAFFT_wrapper() creates at least one output.
+MAFFT_wrapper() uses MAFFT to align DNA/RNA/AA sequences.
 * if input_type = 'file', this will be a single aligned FASTA (.afa)
 * if input_type = 'folder', it will be a .ZIP archive containing...
 - a  "logs" folder, containing MAFFT logs (.log)
@@ -79,8 +78,8 @@ nudimax.MAFFT_wrapper(input_type      = "folder",
                       concat          = False)
 ```
 
-### IQTREE_wrapper()
-iqtree_wrapper() takes an input alignment and runs a maximum-likelihood (ML) phylogenetic analysis with bootstrapping and substitution model selection (defaults are 1000 and AUTO, respectively).
+### iqtree_wrapper()
+iqtree_wrapper() takes an input alignment and runs a maximum-likelihood (ML) analysis with bootstrapping and substitution model selection (defaults are 1000 and AUTO, respectively) to produce phylogenetic trees.
 
 iqtree_wrapper() takes at least two inputs...
 * prefix     is your project name
@@ -97,4 +96,32 @@ nudimax.iqtree_wrapper(prefix = "Tenellia",
                        model = "MFP',
                        nthreads = "AUTO",
                        redo = False)
+```
+
+### MrBayes_wrapper()
+MrBayes_wrapper() takes an input alignment and runs a Bayesian Markov Chain Monte Carlo (BI or MCMC) analysis with adjustable parameters to produce phylogenetic trees. 
+
+MrBayes_wrapper() takes several inputs:
+* prefix      is the desired output file prefix (i.e., project name)
+* input_nex   is the path to the input Nexus alignment file (.nex)
+* input_block (Optional) is a pre-written MrBayes parameter block provided by the user; if none is provided, MrBayes_wrapper will attempt to create one
+* runs        (Optional, default 2) is the number of MCMC analyses to run
+* nchains     (Optional, default: 4) is the number of MCMC chains to use
+* burnin      (Optional, default: 0.25) is the burn-in time. This is either an integer (n generations) OR a decimal (0.25)
+* generations (Optional, default: 1000000) is the number of generations
+* samplefreq  (Optional, default: 1000) is the MCMC sample frequency
+* partitioned (Optional, default: False) toggles partitioned analysis on/off
+* resume      (Optional, default: True) will resume a partially completed run if one is detected
+
+```
+nudimax.MrBayes_wrapper(prefix      = "Tenellia",
+                        input_nex   = "Tenellia_concat_aligned.supermatrix.nex",
+                        input_block = "Tenellia_concat_aligned.bayesblock.nex",
+                        runs        = 2, 
+                        nchains     = 4,
+                        burnin      = 0.25,
+                        generations = 1000000,
+                        samplefreq  = 1000,
+                        partitioned = True,
+                        resume      = True)
 ```
