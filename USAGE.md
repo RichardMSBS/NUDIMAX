@@ -73,8 +73,26 @@ MAFFT_wrapper() takes up to five inputs:
 
 ```
 nudimax.MAFFT_wrapper(input_type      = "folder",
-              input_name      = "Tenellia_concat",
-              prefix          = "",
-              adjustdirection = True,
-              concat          = False)
+                      input_name      = "Tenellia_concat",
+                      prefix          = "",
+                      adjustdirection = True,
+                      concat          = False)
 ```
+
+### IQTREE_wrapper()
+iqtree_wrapper() takes an input alignment and runs a maximum-likelihood (ML) phylogenetic analysis with bootstrapping and substitution model selection (defaults are 1000 and AUTO, respectively).
+
+iqtree_wrapper() takes at least two inputs...
+* prefix     is your project name
+* input      is an alignment, or folder containing multiple aligned FASTAs
+* bootstraps (optional) is the number of bootstraps (default: 1000)
+* model      (optional) is the model to use (default: MFP)
+* redo       (optional) will re-run an existing analysis if one is detected (default: False)
+* nthreads   (optional) is the number of CPU threads to assign (default: AUTO)
+
+nudimax.iqtree_wrapper(prefix = "Tenellia",
+                               input  = "Tenellia_concat_aligned/afa",
+                               bootstraps = 1000,
+                               model = "MFP',
+                               nthreads = "AUTO",
+                               redo = False)
