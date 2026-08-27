@@ -42,14 +42,10 @@ nudimax.setup()
 ```
 Alternatively, save the included .ipynb file to Google Drive. Drive will automatically open in the Colab environment.
 
-## Usage
-<details>
-<summary>Click to expand/collapse</summary>
-For detailed instructions and example inputs, either open the included [Python markdown](https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb) in Google Drive/Jupyter or refer below. 
-
 ## Usage and example inputs
+<details><summary>Click to expand/collapse</summary>
 
-__*Note:__ These examples are raw inputs. To use the Google Colab Forms UI, open the (included .ipynb markdown)[https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb] in Google Drive.
+__*Note:__ These examples are raw inputs. To use the Google Colab Forms UI, open the [included .ipynb markdown](https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb) in Google Drive.
 
 ### export_to_drive() (COLAB ONLY) 
 export_to_drive() takes up to three inputs:
