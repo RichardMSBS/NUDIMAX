@@ -27,7 +27,7 @@ voucher_matrix_to_genbank(Tenellia_corrected.csv)
 ```
 
 ### genbank_to_fastas()
-genbank_to_fasta() creates a .zip archive containing one folder. This subfolder will contain one FASTA file per gene in the original table input CSV. 
+genbank_to_fastas() converts a GenBank download (in GenBank format, .gb) and voucher assignment matrix (i.e., from voucher_matrix_to_genbank()) to a bundle of FASTAs organized by gene. The FASTA headers will be set according to the assignment matrix; in the table above, this means that the GenBank IDs in each row (e.g., KY128712, KY128917, KY128504, and AB123456) will share the assigned voucher name in the first column (e.g., CASIZ 174485).
 
 genbank_to_fastas() takes three inputs:
 * file_prefix       is a file prefix or project name common to all input files
@@ -38,6 +38,22 @@ genbank_to_fastas() takes three inputs:
 nudimax.genbank_to_fastas(file_prefix       = "Tenellia",
                           assignment_matrix = "Tenellia_corrected_clean.csv",
                           genbank_input     = "Tenellia_corrected.gb")
+```
+
+### genbank)concatenator()
+genbank_concatenator() combines the above three functions, and additionally allows the user to upload their own FASTAs for each gene specified in the input CSV. Note that each fasta must end in the gene name specified in the CSV; a valid example file set based on the table above would be my_samples_16S.fasta, my_samples_COI.fasta, and my_samples_H3.fasta.
+
+genbank_concatenator() takes 4 arguments:
+* file_prefix        is a file prefix (e.g., the project name)
+* assignment_matrix  is the clean CSV file produced by voucher_matrix_to_genbank()
+* genbank_input      is the .gb download from genbank
+* input_archive_name is the name of the .zip archive being uploaded
+
+```
+nudimax.genbank_concatenator(file_prefix        = "Tenellia",
+                             assignment_matrix  = "Tenellia_corrected_clean.csv",
+                             genbank_input      = "Tenellia_download.gb",
+                             input_archive_name = "my_samples.zip");
 ```
 
 ### BLAST_wrapper()
