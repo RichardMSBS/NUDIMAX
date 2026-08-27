@@ -3,7 +3,7 @@ Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán,² ³ Terry Gosliner²
 
 ¹Center for Comparative Genomics, California Academy of Sciences
 
-²Department of Invertebrate Zoology & Geology 
+²Department of Invertebrate Zoology & Geology, California Academy of Sciences
 
 ³University of Puerto Rico at Cayey
 
