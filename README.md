@@ -1,5 +1,5 @@
 # NUDIMAX: An accessible data-wrangling pipeline and wrapper for partitioned phylogenetic workflows
-Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán² ³, Terry Gosliner²
+Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán,² ³ Terry Gosliner²
 
 ¹Center for Comparative Genomics, California Academy of Sciences
 
