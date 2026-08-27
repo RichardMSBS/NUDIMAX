@@ -54,3 +54,19 @@ nudimax.BLAST_wrapper(input_type = 'folder',
                       input_name = 'Tenellia_out',
                       max_hits   = 10)
 ```
+
+### MAFFT_wrapper()
+MAFFT_wrapper() creates at least one output.
+* if input_type = 'file', this will be a single aligned FASTA (.afa)
+* if input_type = 'folder', it will be a .ZIP archive containing...
+- a  "logs" folder, containing MAFFT logs (.log)
+- an "afa"  folder, containing aligned FASTAs (.afa)
+- a  "nex"  folder, containing single NEXUS alignments (.nex)
+* if "concat" = True, then there will be a combined file (.supermatrix.nex)
+
+MAFFT_wrapper() takes up to five inputs:
+* input_type is 'file' or 'folder'
+* input_name is a FASTA filename, or the name of a folder containing FASTAs
+* prefix          (optional, default: input name) is the project name
+* adjustdirection (optional, default: True) MAFFT reverse-complement detection
+* concat          (optional, default: True) creates a concatenated Nexus supermatrix (.supermatrix.nex) for use in MrBayes
