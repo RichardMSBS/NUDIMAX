@@ -1,5 +1,5 @@
 # Chagelog
-### 0.16.2-alpha patch <-- you are here
+### 0.16.2-alpha patch
 * added user-friendly way to export scratch directory to Google Drive
 
 ### 0.16.1-alpha patch
@@ -14,7 +14,7 @@
 * switched to file-streaming (.readline) vs line-by-line to save memory
 * added MrBayes functionality
 
-### 0.15.0-alpha (not standalone; rolled into 0.16)
+### 0.15.0-alpha
 * added nexus conversion/concatenation (for MrBayes)
 * added ability to toggle reverse complement detection on/off
 * improved reverse-complement handling/corrections
