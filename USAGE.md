@@ -90,9 +90,11 @@ iqtree_wrapper() takes at least two inputs...
 * redo       (optional) will re-run an existing analysis if one is detected (default: False)
 * nthreads   (optional) is the number of CPU threads to assign (default: AUTO)
 
+```
 nudimax.iqtree_wrapper(prefix = "Tenellia",
                                input  = "Tenellia_concat_aligned/afa",
                                bootstraps = 1000,
                                model = "MFP',
                                nthreads = "AUTO",
                                redo = False)
+```
