@@ -1,6 +1,6 @@
 ## Usage and example inputs
 
-__*Note:__ These examples are raw inputs. To use the Google Colab Forms UI, open the (included .ipynb markdown)[https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb] in Google Drive.
+__*Note:__ These examples are raw inputs. To use the Google Colab Forms UI, open the [included .ipynb markdown](https://github.com/RichardMSBS/NUDIMAX/blob/main/nudimax/(prerelease)_NUDIMAX_v0_16_2.ipynb) in Google Drive.
 
 ### export_to_drive() (COLAB ONLY) 
 export_to_drive() takes up to three inputs:
