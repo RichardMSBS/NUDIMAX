@@ -1,4 +1,4 @@
-# Chagelog
+# Changelog
 ### 0.16.2-alpha patch
 * added user-friendly way to export scratch directory to Google Drive
 
