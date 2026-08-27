@@ -92,9 +92,9 @@ iqtree_wrapper() takes at least two inputs...
 
 ```
 nudimax.iqtree_wrapper(prefix = "Tenellia",
-                               input  = "Tenellia_concat_aligned/afa",
-                               bootstraps = 1000,
-                               model = "MFP',
-                               nthreads = "AUTO",
-                               redo = False)
+                       input  = "Tenellia_concat_aligned/afa",
+                       bootstraps = 1000,
+                       model = "MFP',
+                       nthreads = "AUTO",
+                       redo = False)
 ```
