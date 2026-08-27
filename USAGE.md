@@ -70,3 +70,11 @@ MAFFT_wrapper() takes up to five inputs:
 * prefix          (optional, default: input name) is the project name
 * adjustdirection (optional, default: True) MAFFT reverse-complement detection
 * concat          (optional, default: True) creates a concatenated Nexus supermatrix (.supermatrix.nex) for use in MrBayes
+
+```
+nudimax.MAFFT_wrapper(input_type      = "folder",
+              input_name      = "Tenellia_concat",
+              prefix          = "",
+              adjustdirection = True,
+              concat          = False)
+```
