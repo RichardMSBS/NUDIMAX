@@ -472,16 +472,23 @@ def BLAST_single(BLAST_query, max_hits = 20):
 
   print(f'  {BLAST_query}: BLASTing...')
 
-  command = f'''./bin/ncbi-blast-2.17.0+/bin/blastn -query  {BLAST_query} -max_target_seqs {max_hits} -out {BLAST_out} -outfmt "7 qseqid sacc stitle length qstart qend pident evalue" -db core_nt -remote'''
-  subprocess.run(command, shell=True)
-
-  print(f'  {BLAST_query}: BLASTed.')
+  exe = f"./bin/ncbi-blast-2.17.0+/bin/blastn"
+  cmd = [exe, "-query", BLAST_query, "-max_target_seqs", str(max_hits), 
+         "-out", BLAST_out, 
+         "-outfmt", "7 qseqid sacc stitle length qstart qend pident evalue", 
+         "-db", "core_nt", "-remote"]
+  try:  
+    subprocess.run(cmd, check=True)
+    print(f'  {BLAST_query}: BLASTed.')
+  except Exception as e:
+    print(f'  error: {e}')
 
 def BLAST_multiple(BLAST_dir, max_hits = 20):
   print(f'  attempting to access {BLAST_dir}')
   BLAST_dir = Path(BLAST_dir)
   for filename in os.listdir(BLAST_dir):
-    BLAST_single(f'{BLAST_dir}/{filename}', max_hits)
+    BLAST_path = Path(BLAST_dir) / filename
+    BLAST_single(BLAST_path, max_hits)
 
 def BLAST_wrapper(input_type, input_name, max_hits = 20):
   if input_type.lower() == 'file':
