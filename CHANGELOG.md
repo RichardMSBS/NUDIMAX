@@ -1,6 +1,6 @@
 # Changelog
 ### 0.16.3-alpha patch
-* removed reliance on shell=True 
+* BLAST_wrapper: removed reliance on shell=True 
 
 ### 0.16.2-alpha patch
 * added user-friendly way to export scratch directory to Google Drive
