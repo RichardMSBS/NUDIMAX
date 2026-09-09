@@ -23,6 +23,8 @@ This is designed to:
 - Run both the ML and BI phylogenetic analyses packages
 - Rename Newick branches (e.g., adding species names)
 
+While NUDIMAX is written as an end-to-end pipeline, each feature can also be run _a la carte._
+
 > **\*Note:** While this feature is included, a remote BLAST query is much slower than the BLAST web interface or using a local database.
 
 ## Methodology
