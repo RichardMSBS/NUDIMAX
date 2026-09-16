@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""(Stable) NUDIMAX v0.16.2-alpha.ipynb
+# (Stable) NUDIMAX v0.16.2-alpha.ipynb
 
 # Notes
 # when using the Colab forms UX, strings do not need to be bounded in quotes.
