@@ -51,7 +51,7 @@ __*Note:__ These examples are raw inputs. To use the Google Colab Forms UI, open
 
 ### export_to_drive() (COLAB ONLY) 
 export_to_drive() takes up to three inputs:
-* destination   (Optional) is the target file path on Google Drive. Defaults to NUDIMAX_backup_<timestamp>
+* destination   (Optional) is the target file path on Google Drive. Defaults to NUDIMAX_backup_\<timestamp>
 * source        is the file or folder to back up
 * copy_all      (Optional) will copy the entire NUDIMAX scratch folder.
 
