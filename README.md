@@ -1,5 +1,5 @@
 # NUDIMAX: An accessible data-wrangling pipeline and wrapper for partitioned phylogenetic workflows
-Richard Baker,¹ Lynn J. Bonomo,² Paola Guzmán,² ³ Terry Gosliner²
+Richard Baker-Strader,¹ Lynn J. Bonomo,² Paola Guzmán,² ³ Terry Gosliner²
 
 ¹Center for Comparative Genomics, California Academy of Sciences
 
@@ -194,7 +194,7 @@ nudimax.MrBayes_wrapper(prefix      = "Tenellia",
 ## Citation
 Although NUDIMAX was written to handle the Gosliner Lab's specific use case, it should be helpful for anyone using a similar workflow. If you use NUDIMAX in your research, please cite the project as shown below.
 
-Baker, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16.3-alpha). Retrieved from https://github.com/RichardMSBS/NUDIMAX
+Baker-Strader, R., Bonomo, L., Guzmán, P., & Gosliner, T. (2026). NUDIMAX: An accessible data-wrangling pipeline for partitioned phylogenetic workflows (Version 0.16.3-alpha). Retrieved from https://github.com/RichardMSBS/NUDIMAX
 
 ```bibtex
 @software{NUDIMAX,
